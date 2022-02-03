@@ -1,29 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-app id="inspire">
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Strategi Imóveis</v-toolbar-title>
+    </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      temporary
+    >
+      <!--  -->
+    </v-navigation-drawer>
+
+    <v-main class="grey lighten-2">
+      <v-container>
+        <v-row>
+          <template v-for="n in 4">
+            <v-col
+              :key="n"
+              class="mt-2"
+              cols="12"
+            >
+              <strong>Category {{ n }}</strong>
+            </v-col>
+
+            <v-col
+              v-for="j in 6"
+              :key="`${n}${j}`"
+              cols="6"
+              md="2"
+            >
+              <v-sheet height="150"></v-sheet>
+            </v-col>
+          </template>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default Vue.extend({
-  name: 'App',
-  components: {
-    HelloWorld
+<script>
+  export default {
+    data: () => ({ drawer: null }),
   }
-});
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
