@@ -1,6 +1,6 @@
 <template>
   <v-main class="background">
-    <v-container fluid>
+    <v-container fluid class="pt-0">
       <v-row dense>
         <v-col
           v-for="card in cards"
@@ -19,27 +19,42 @@
             </v-img>
             <v-row>
               <v-card-subtitle 
-                class="ml-2 text-h5 font-weight-medium"
+                class="ml-2 pr-0 pb-0 text-h5 font-weight-medium"
               >
                 Valor de venda:
               </v-card-subtitle>
               <v-card-subtitle 
                 v-text="card.text"
-                class="text-h6 green--text"
+                class="text-h6 pb-0 pl-1 green--text"
               >
               </v-card-subtitle>
               <v-card-subtitle 
-                class="ml-2 text-h5 font-weight-medium"
+                class="ml-2 pr-0 pt-0 text-h5 font-weight-medium"
               >
                 Valor de comissão (5%):
               </v-card-subtitle>
               <v-card-subtitle 
-                class="text-h6 green--text"
+                class="text-h6 pt-0 pl-1 green--text"
               >
                 R$ 45.550
               </v-card-subtitle>
             </v-row>
-              <v-card-text class="text-h6" v-text="card.size"></v-card-text>
+            <v-card-text class="text-h6 text-center" v-text="card.size"></v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+
+              <v-btn icon>
+                <v-icon>mdi-heart</v-icon>
+              </v-btn>
+
+              <v-btn icon>
+                <v-icon>mdi-cart-arrow-down</v-icon>
+              </v-btn>
+
+              <v-btn icon>
+                <v-icon>mdi-share-circle</v-icon>
+              </v-btn>
+            </v-card-actions>            
           </v-card>
         </v-col>
       </v-row>
@@ -72,3 +87,7 @@
     }),
   }
 </script>
+
+<style scoped>
+
+</style>

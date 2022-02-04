@@ -12,7 +12,7 @@ const routes: Array<RouteConfig> = [
     component: Dashboard
   },
   {
-    path: '/user',
+    path: '/users',
     name: 'Users',
     component: Users
   }
