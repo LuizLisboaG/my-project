@@ -24,3 +24,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Imagens do projeto
+Pagina do CRUD de usuários
+![Users](https://user-images.githubusercontent.com/47800850/152587277-36c50930-15fd-4c2a-b643-5ed9265571be.png)
+
+Pagian de Dashboard dos imoveis, sem nenhuma funcionalidade implementada
+![Dashboard](https://user-images.githubusercontent.com/47800850/152587292-ff3c57d1-9960-4b7c-aa62-6549e477ce72.png)
