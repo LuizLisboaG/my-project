@@ -1,5 +1,7 @@
 # my-project
 
+Introdução do projeto realizado com finalidade de resolver um desafio. O projeto foi escrito em Vuejs 2.
+
 ## Project setup
 ```
 npm install
