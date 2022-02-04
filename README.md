@@ -26,6 +26,9 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Imagens do projeto
+A navegação entre as paginas pode ser feita no click da area marcada
+![Screenshot_2](https://user-images.githubusercontent.com/47800850/152587561-343c6ff1-3ab1-4e47-9bed-4e3509adfc72.png)
+
 Pagina do CRUD de usuários
 ![Users](https://user-images.githubusercontent.com/47800850/152587277-36c50930-15fd-4c2a-b643-5ed9265571be.png)
 
